@@ -1,0 +1,335 @@
+.page {
+    min-height: 100%;
+    padding: var(--space-6) var(--space-4);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Image Section */
+.imageSection {
+    position: sticky;
+    top: calc(60px + var(--space-6));
+    height: fit-content;
+}
+
+.imageWrapper {
+    aspect-ratio: 1;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+}
+
+/* Info Section */
+.infoSection {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.collection {
+    font-size: 0.875rem;
+    font-family: var(--font-mono);
+    color: var(--color-accent);
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.description {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+.owner {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.ownerLabel {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+}
+
+.ownerAddress {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+}
+
+/* Price Card */
+.priceCard {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-5);
+    margin-top: var(--space-4);
+}
+
+.priceHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-2);
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+}
+
+.statusBadge {
+    padding: var(--space-1) var(--space-2);
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--color-success);
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.soldBadge {
+    padding: var(--space-1) var(--space-2);
+    background: rgba(220, 38, 38, 0.1);
+    color: #dc2626;
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.cancelledBadge {
+    padding: var(--space-1) var(--space-2);
+    background: rgba(156, 163, 175, 0.1);
+    color: #9ca3af;
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.expiredBadge {
+    padding: var(--space-1) var(--space-2);
+    background: rgba(245, 158, 11, 0.1);
+    color: #f59e0b;
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.soldNotice {
+    text-align: center;
+    padding: var(--space-4);
+    background: rgba(220, 38, 38, 0.1);
+    border-radius: var(--radius-md);
+    color: #dc2626;
+    font-weight: 500;
+}
+
+.cancelledNotice {
+    text-align: center;
+    padding: var(--space-4);
+    background: rgba(156, 163, 175, 0.1);
+    border-radius: var(--radius-md);
+    color: #9ca3af;
+    font-weight: 500;
+}
+
+.expiredNotice {
+    text-align: center;
+    padding: var(--space-4);
+    background: rgba(245, 158, 11, 0.1);
+    border-radius: var(--radius-md);
+    color: #f59e0b;
+    font-weight: 500;
+}
+
+.priceValue {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-4);
+}
+
+.breakdown {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    padding: var(--space-4);
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-4);
+}
+
+.breakdownRow {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    color: var(--color-text-secondary);
+}
+
+.breakdownTotal {
+    display: flex;
+    justify-content: space-between;
+    padding-top: var(--space-2);
+    border-top: 1px solid var(--color-border);
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+.buyBtn {
+    width: 100%;
+    padding: var(--space-4);
+    font-size: 1rem;
+}
+
+.ownerNotice {
+    text-align: center;
+    padding: var(--space-4);
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius-md);
+    color: var(--color-text-secondary);
+}
+
+.error {
+    padding: var(--space-3);
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid var(--color-error);
+    border-radius: var(--radius-md);
+    color: var(--color-error);
+    font-size: 0.875rem;
+    margin-bottom: var(--space-3);
+}
+
+.success {
+    padding: var(--space-4);
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid var(--color-success);
+    border-radius: var(--radius-md);
+    color: var(--color-success);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.txLink {
+    display: inline-block;
+    color: var(--color-accent);
+    text-decoration: underline;
+    font-size: 0.875rem;
+}
+
+.expiry {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    text-align: center;
+    margin-bottom: var(--space-3);
+}
+
+.ownerActions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.cancelBtn {
+    width: 100%;
+    padding: var(--space-3);
+}
+
+.orderHash {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+}
+
+/* Details */
+.details {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-5);
+}
+
+.detailsTitle {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: var(--space-4);
+}
+
+.detailRow {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-3) 0;
+    border-bottom: 1px solid var(--color-border-light);
+    font-size: 0.875rem;
+}
+
+.detailRow:last-child {
+    border-bottom: none;
+}
+
+.detailRow span:first-child {
+    color: var(--color-text-muted);
+}
+
+.detailRow a {
+    font-family: var(--font-mono);
+}
+
+/* Not Found */
+.notFound {
+    text-align: center;
+    padding: var(--space-8);
+}
+
+.notFound h2 {
+    margin-bottom: var(--space-2);
+}
+
+.notFound p {
+    color: var(--color-text-secondary);
+}
+
+/* Skeleton */
+.skeleton {
+    text-align: center;
+    padding: var(--space-8);
+    color: var(--color-text-secondary);
+}
+
+/* Fee discount styles */
+.originalFee {
+    text-decoration: line-through;
+    color: #ef4444;
+    margin-right: 0.25rem;
+}
+
+.discountedFee {
+    color: #22c55e;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+
+    .imageSection {
+        position: static;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .priceValue {
+        font-size: 1.5rem;
+    }
+}

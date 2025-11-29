@@ -1,0 +1,118 @@
+.page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--space-6) var(--space-4);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: var(--space-8);
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: var(--space-2);
+}
+
+.subtitle {
+    color: var(--color-text-secondary);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-4);
+}
+
+/* Skeleton */
+.skeleton {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.skeletonImage {
+    aspect-ratio: 1;
+    background: linear-gradient(
+        90deg,
+        var(--color-bg-secondary) 25%,
+        var(--color-bg-hover) 50%,
+        var(--color-bg-secondary) 75%
+    );
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s ease-in-out infinite;
+}
+
+.skeletonContent {
+    padding: var(--space-4);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.skeletonLine {
+    height: 1rem;
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius-sm);
+}
+
+@keyframes skeleton-loading {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* Empty state */
+.empty {
+    text-align: center;
+    padding: var(--space-8);
+    background: var(--color-bg-card);
+    border: 1px dashed var(--color-border);
+    border-radius: var(--radius-xl);
+}
+
+.emptyIcon {
+    font-size: 4rem;
+    display: block;
+    margin-bottom: var(--space-4);
+}
+
+.empty h2 {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-2);
+}
+
+.empty p {
+    color: var(--color-text-secondary);
+}
+
+/* Load more */
+.loadMore {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--space-8);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page {
+        padding: var(--space-4);
+    }
+}

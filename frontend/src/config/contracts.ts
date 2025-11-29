@@ -1,0 +1,21 @@
+export const CONTRACTS = {
+  NFT_MARKETPLACE: '0x28Feda6320DD22E7643b00d63e96a50dc18D6Cd9' as const,
+  CTC1_NFT: '0xd0b1F058afb6a5F674Ddb24b3abEe77eAfC5467A' as const,
+};
+
+export const MARKETPLACE_CONFIG = {
+  PLATFORM_FEE_BPS: 20n,
+  BPS_DENOMINATOR: 10000n,
+  DEFAULT_LISTING_DURATION_DAYS: 30,
+  MAX_LISTING_DURATION_DAYS: 180,
+};
+
+export const EIP712_DOMAIN = {
+  name: 'IglooMarket',
+  version: '1',
+} as const;
+
+export const CHAIN_IDS = {
+  CREDITCOIN_MAINNET: 102030,
+  CREDITCOIN_TESTNET: 102031,
+} as const;
