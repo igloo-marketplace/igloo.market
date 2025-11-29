@@ -83,10 +83,14 @@ uint256 public constant MAX_FEE_BPS = 1000; // Max 10% - immutable
 uint256 public platformFeeBps;              // Actual fee - owner can change
 ```
 
-- **Maximum cap**: 10% (hardcoded, immutable)
-- **Actual fee**: Owner can adjust, but cannot exceed 10%
-- **Current fee**: 0% (promotional period)
+| Fee Type | Value | Note |
+|----------|-------|------|
+| **Maximum cap** | 10% | Hardcoded, immutable, cannot be changed |
+| **Current fee** | 0% | Promotional period |
+| **Expected live fee** | ~0.5% | Subject to change, always below max cap |
+
 - Fee changes are transparent (emits `PlatformFeeUpdated` event)
+- You can always check the current fee on-chain via `platformFeeBps()`
 
 ---
 
