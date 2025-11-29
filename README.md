@@ -213,9 +213,9 @@ License: MIT
 
 | Item | Status |
 |------|--------|
-| Internal Code Review | ✅ Complete |
-| Formal Security Audit | ❌ Not yet |
-| Bug Bounty Program | ❌ Not yet |
+| Internal Code Review |  Complete |
+| Formal Security Audit |  Planned |
+| Bug Bounty Program |  Not yet |
 
 We plan to conduct a formal security audit before significant trading volume.
 
@@ -225,7 +225,7 @@ We plan to conduct a formal security audit before significant trading volume.
 
 - **GitHub**: [igloo-market](https://github.com/igloo-market)
 - **Issues**: Please report security issues privately
-
+- **X**: [Igloo Market🐧](https://x.com/igloomarket)
 ---
 
-*Last Updated: November 2024*
+*Last Updated: November 2025*
