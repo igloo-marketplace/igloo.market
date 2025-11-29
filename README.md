@@ -227,7 +227,6 @@ We plan to conduct a formal security audit before significant trading volume.
 
 ## Contact & Support
 
-- **GitHub**: [igloo-market](https://github.com/igloo-market)
 - **Issues**: Please report security issues privately
 - **X**: [Igloo Market🐧](https://x.com/igloomarket)
 ---
