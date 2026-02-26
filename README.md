@@ -86,7 +86,7 @@ The contract inherits OpenZeppelin's `Ownable` pattern. The owner has **limited 
 
 | Function | Description |
 |----------|-------------|
-| `setPlatformFee(uint256)` | Adjust platform fee (max 10%) |
+| `setPlatformFee(uint256)` | Adjust platform fee |
 | `setFeeRecipient(address)` | Change fee recipient address |
 
 ### What Owner CANNOT Do
@@ -103,14 +103,8 @@ The contract inherits OpenZeppelin's `Ownable` pattern. The owner has **limited 
 
 ### Fee Constraints
 
-```solidity
-uint256 public constant MAX_FEE_BPS = 1000; // Max 10% - immutable
-uint256 public platformFeeBps;              // Actual fee - owner can change
-```
-
 | Fee Type | Value | Note |
 |----------|-------|------|
-| **Maximum cap** | 10% | Hardcoded, immutable, cannot be changed |
 | **Current fee** | 0% | |
 | **Fee visibility** | On-chain | Check via `platformFeeBps()` anytime |
 
